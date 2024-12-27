@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+Desktop Notifier Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Overview
 
-## Available Scripts
+The Desktop Notifier Application allows users to send notifications to their desktop at specified intervals and repetitions. The application is built using React for the frontend and Flask for the backend.
 
-In the project directory, you can run:
+#Features
 
-### `npm start`
+Input fields to specify the notification title and message.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Options to set the interval (in seconds) between notifications.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ability to specify the number of repetitions for the notification.
 
-### `npm test`
+Real-time status updates on the notification-sending process.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#Technologies Used
 
-### `npm run build`
+Frontend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React: For creating a dynamic and interactive user interface.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+CSS: For styling the components.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Backend
 
-### `npm run eject`
+Flask: To handle API requests and process notifications.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Axios: To make HTTP requests from the frontend to the backend.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#Installation and Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Node.js and npm installed on your system.
 
-## Learn More
+Python installed on your system.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Backend Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Clone the repository:
 
-### Code Splitting
+git clone <[repository-url](https://github.com/yashwanthm998/Desktop-Notifier)>
+cd <repository-folder>/backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Install the required Python packages:
 
-### Analyzing the Bundle Size
+pip install -r requirements.txt
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Run the Flask server:
 
-### Making a Progressive Web App
+python app.py
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The backend will start on http://localhost:5001.
 
-### Advanced Configuration
+Frontend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Navigate to the frontend folder:
 
-### Deployment
+cd ../frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Install the required npm packages:
 
-### `npm run build` fails to minify
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Start the React development server:
+
+npm start
+
+The frontend will start on http://localhost:3000.
+
+#Usage
+
+Open the application in your web browser.
+
+Fill out the following fields:
+
+Title: Enter the notification title.
+
+Message: Enter the notification message.
+
+Interval: Set the interval between notifications (in seconds).
+
+Repetitions: Set the number of times the notification should be sent.
+
+Click on Send Notifications to initiate the notification process.
+
+The status message below the form will provide feedback on the operation.
+
+#API Endpoints
+
+POST /send_notifications
+
+Request Body:
+
+{
+  "title": "<notification-title>",
+  "message": "<notification-message>",
+  "interval": <interval-in-seconds>,
+  "repetitions": <number-of-repetitions>
+}
+
+Response:
+
+{
+  "message": "Notifications sent successfully."
+}
+
+
+
+
