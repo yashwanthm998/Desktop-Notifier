@@ -1,10 +1,10 @@
-Desktop Notifier Application
+<h1>Desktop Notifier Application</h1>
 
 # Overview
 
 The Desktop Notifier Application allows users to send notifications to their desktop at specified intervals and repetitions. The application is built using React for the frontend and Flask for the backend.
 
-#Features
+# Features
 
 Input fields to specify the notification title and message.
 
@@ -14,7 +14,7 @@ Ability to specify the number of repetitions for the notification.
 
 Real-time status updates on the notification-sending process.
 
-#Technologies Used
+# Technologies Used
 
 Frontend
 
@@ -28,7 +28,7 @@ Flask: To handle API requests and process notifications.
 
 Axios: To make HTTP requests from the frontend to the backend.
 
-#Installation and Setup
+# Installation and Setup
 
 Prerequisites
 
@@ -69,7 +69,7 @@ npm start
 
 The frontend will start on http://localhost:3000.
 
-#Usage
+# Usage
 
 Open the application in your web browser.
 
@@ -87,7 +87,7 @@ Click on Send Notifications to initiate the notification process.
 
 The status message below the form will provide feedback on the operation.
 
-#API Endpoints
+# API Endpoints
 
 POST /send_notifications
 
