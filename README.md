@@ -1,6 +1,6 @@
 Desktop Notifier Application
 
-#Overview
+# Overview
 
 The Desktop Notifier Application allows users to send notifications to their desktop at specified intervals and repetitions. The application is built using React for the frontend and Flask for the backend.
 
